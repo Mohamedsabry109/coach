@@ -52,7 +52,7 @@ def batchnorm_activation_dropout(input_layer, batchnorm, activation_function, dr
     # remove the input layer from the layers list
     del layers[0]
 
-    return layers
+    return layers[-1]
 
 
 # define global dictionary for storing layer type to layer implementation mapping
